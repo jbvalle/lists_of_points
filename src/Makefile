@@ -4,6 +4,9 @@
 #the phony will still be run
 .Phony = all clean
 
+#mark-up-var
+RED=\e[1;33m
+RESET=\e[0m
 #declare all variables
 CC = gcc
 #object dir
@@ -41,7 +44,9 @@ $(ODIR)/%.o: %.c
 
 #README
 SHOW_README:
+	@echo "$(RED)"
 	@cat ../README.txt
+	@echo "$(RESET)"
 
 #clean target
 clean:

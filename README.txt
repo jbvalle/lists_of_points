@@ -20,7 +20,6 @@ This Project aimes to demonstrate linked lists with 2dimensional coordinates gen
 |
 +-----> /bank/include: *.h
 
-
 +*****Building Process & Execution:***********************+
 |                                                         |
 | 1. Build Project from bank/src/ directory:              |
@@ -29,5 +28,4 @@ This Project aimes to demonstrate linked lists with 2dimensional coordinates gen
 | 2. Execute main program :                               |
 | :$ ./main                                               |
 +*********************************************************+  
-
 

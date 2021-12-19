@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
 #include "../include/node_t.h"
 
 void append_coords(node_t **head, int x, int y){
@@ -20,10 +19,8 @@ void append_coords(node_t **head, int x, int y){
     }
 
     //Iterate through list until Null pointer found
-    while(ptr->next != NULL){
+    for(;ptr->next != NULL; ptr = ptr->next);
 
-        ptr = ptr->next;
-    }
     //Append new element to the last element of the list
     ptr->next = new_coords;
 
